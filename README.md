@@ -33,7 +33,9 @@ iris=load_iris()
 df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
 df['target'] = iris.target
 ~~~
+~~~
 print(df.head())
+~~~
 ~~~
 X = df.drop('target', axis=1)
 y = df['target']
